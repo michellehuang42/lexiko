@@ -35,6 +35,7 @@ with open('medline_diseases.csv', 'a') as the_file:
 		topics = section.findAll("a")
 		for topic in topics:
 			disease = topic.text
+			print "disease: " + disease
 			disease_url = topic['href']
 			# or write a function for getting the soup of the disease_url
 			disClient = urllib2.urlopen(disease_url)
@@ -43,12 +44,11 @@ with open('medline_diseases.csv', 'a') as the_file:
 			dis_soup = soup(dis_html, "html.parser")
 			summary_container = dis_soup.findAll("div", {"id": "topic-summary"})
 			summary = summary_container[0].p.text
+			print "summary: " + summary
 
-		# print "disease: " + disease
 		# print "disease_url: " + disease_url
-		# print "summary: " + summary
 
-		the_file.write(disease + "," + disease_url + "," + summary.replace(",", ";") + "\n")
+			the_file.write(disease + "," + disease_url + "," + summary.replace(",", ";") + "\n")
 
 the_file.close()
 
