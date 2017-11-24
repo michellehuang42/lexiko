@@ -1,5 +1,5 @@
 // https://medlineplus.gov/healthtopics_a.html
-// Displays title of all links + respective websites
+// Displays title of all links + respective websites. Limited to first 15 to prevent crashing on website during test
 // TO DO: open up each URL, export first paragraph of disease summary, add to database
 
 function pageFunction(context) {
