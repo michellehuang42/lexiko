@@ -21,34 +21,36 @@ page_soup = soup(page_html, "html.parser")
 #Grabs each section
 sections = page_soup.findAll("div", {"class": "section"})
 
-filename = "medline_diseases.csv"
-f = open(filename, "w")
+with open('medline_diseases.csv', 'a') as the_file:
 
-headers = "disease, disease_url, summary\n"
+# filename = "medline_diseases.csv"
+# f = open(filename, "w")
 
-f.write(headers)
+	headers = "disease, disease_url, summary\n"
+	the_file.write(headers)
+# f.write(headers)
 
 #Grabs each name and link under each section
-for section in sections:
-	topics = section.findAll("a")
-	for topic in topics:
-		disease = topic.text
-		disease_url = topic['href']
-		# or write a function for getting the soup of the disease_url
-		disClient = urllib2.urlopen(disease_url)
-		dis_html = disClient.read()
-		disClient.close()
-		dis_soup = soup(dis_html, "html.parser")
-		summary_container = dis_soup.findAll("div", {"id": "topic-summary"})
-		summary = summary_container[0].p.text
+	for section in sections:
+		topics = section.findAll("a")
+		for topic in topics:
+			disease = topic.text
+			disease_url = topic['href']
+			# or write a function for getting the soup of the disease_url
+			disClient = urllib2.urlopen(disease_url)
+			dis_html = disClient.read()
+			disClient.close()
+			dis_soup = soup(dis_html, "html.parser")
+			summary_container = dis_soup.findAll("div", {"id": "topic-summary"})
+			summary = summary_container[0].p.text
 
-	# print("disease: " + disease)
-	# print("disease_url: " + disease_url)
-	# print("summary: " + summary)
+		# print "disease: " + disease
+		# print "disease_url: " + disease_url
+		# print "summary: " + summary
 
-	f.write(disease + "," + disease_url + "," + summary.replace(",", ";") + "\n")
+		the_file.write(disease + "," + disease_url + "," + summary.replace(",", ";") + "\n")
 
-f.close()
+the_file.close()
 
 #Add into json file
 
