@@ -1,3 +1,7 @@
+// https://medlineplus.gov/healthtopics_a.html
+// Displays title of all links + respective websites
+// TO DO: open up each URL, export first paragraph of disease summary, add to database
+
 function pageFunction(context) {
     // called on every page the crawler visits, use it to extract data from it
     var $ = context.jQuery;
@@ -12,5 +16,3 @@ function pageFunction(context) {
     })
     return results;
 }
-
-
