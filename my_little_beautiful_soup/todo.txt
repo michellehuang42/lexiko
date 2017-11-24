@@ -1,0 +1,10 @@
+1) Figure out how to get data. How to scrape it. This will just be a Python script using beautiful soup.
+
+2) Figure out where to put data. JSON files are fine for small amounts of data, but don't scale well.
+You should use a hosted SQL.
+Options:
+SQLite
+MySQL
+PostgreSQL
+
+3) Display in a pretty manner.
