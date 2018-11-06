@@ -1,0 +1,309 @@
+<!-- so go to the docs and copy paste the example navbar, full height hero section, large hero section, medium hero section, large hero section, and the the footer
+then put in the content and start to style it the way you want it to
+I think sketch can convert your mockup to HTML and CSS but I don't think that'll be responsive -->
+
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Healthcare platform for doctors and patients">
+    <meta name="keywords" content="medical technology, healthcare platform">
+    <meta name="author" content="Michelle Huang, Md Islam">
+    <title>LexikoHealth</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="bulma.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+    <script type="text/javascript" src="script-nav.js"></script>
+    <script type="text/javascript" src="script-modal.js"></script>
+  </head>
+  
+  <body>
+
+<!--   <nav class="navbar is-visible" role="navigation" aria-label="main navigation" data-nav-status="toggle">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+      </a>
+
+      <button class="button navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav> -->
+  
+  <section id="landing" class="hero is-info is-fullheight">
+  <div class="gradient position"></div>
+  <div class="gradient2 position"></div>
+
+    <div class="hero-head">
+      <nav class="navbar is-visible" role="naviation" aria-label="main navigation" data-nav-status="toggle">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active" href="web-design.html">
+                Home
+              </a>
+              <a class="navbar-item" href="about.html">
+                About
+              </a>
+              <a class="navbar-item" href="mission.html">
+                Mission
+              </a>
+              <a class="navbar-item" href="product.html">
+                Product
+              </a>
+              <a class="navbar-item">
+                Explore
+                <span class="icon">
+                  <i class="mdi mdi-chevron-down mdi-light"></i>
+                </span>
+              </a>
+              <span class="navbar-item">
+                <a class="button is-info is-inverted">
+                  <span>Login</span>
+                </a>
+              </span>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>  
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          LexikoHealth
+        </h1>
+        <h2 class="subtitle">
+          Lexiko is an application that helps patients understand </br>more about their health conditions.  
+        </h2>
+         <div class="buttons">
+            <a class="button is-primary users">
+              <span>For General </br>Users</span>
+              <span class="icon">
+                <i class="mdi mdi-chevron-right mdi-light"></i>
+              </span>
+            </a>
+            <a class="button is-link is-inverted is-outlined">
+              <span>For Healthcare </br>Providers</span>
+              <span class="icon">
+                <i class="mdi mdi-chevron-right mdi-light"></i>
+              </span>
+            </a>
+          </div>
+        <div class="next">
+          <a>
+            <span>HERE'S HOW IT WORKS</span>
+            <span class="icon">
+                <i class="mdi mdi-play-circle-outline mdi-light"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section id="first" class="hero is-large">
+    <div class="first-gradient position"></div>
+    <div class="first-gradient2 position"></div>
+
+    <div class="hero-body">
+      <div class="container">
+        <hr class="first-hr"></hr>
+        <h1 class="title">
+          1. Upload a lab report
+        </h1>
+        <h2 class="subtitle">
+          With 3 clicks, securely upload your health reports online for a free analysis.
+        </h2>
+        <a class="button is-danger is-medium" href="">
+          <span>DEMO</span>
+          <span class="icon">
+            <i class="mdi mdi-chevron-right mdi-light"></i>
+          </span>
+          <div class="modal is-visible">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <!-- Any other Bulma elements you want -->
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+        </a>
+        <hr class="first-hr2"></hr>
+      </div>
+    </div>  
+
+  </section>
+
+  <section id="second" class="hero is-primary is-medium">
+
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          2. Answer a few simple questions
+        </h1>
+        <h2 class="subtitle">
+          While your results process, fill out a brief 5-minute questionnaire to refine your health data for more optimal results and recommendations.
+        </h2>
+      </div>
+      <img src="./images/analytics.png">
+    </div>
+
+  </section>
+
+  <section id="third" class="hero is-info is-large">
+  <div class="background-img position"></div>
+    
+    <div class="wrapper">
+      <div class="box">
+        <h1>
+          3. Create a personalized plan
+        </h1>
+        <h2>
+          Interact with your data to create a customized plan to a healthier life: set goals and notifications to track your progress along the way. 
+        </h2>
+        <h2>
+            If you like what you’re seeing, <a class="more">create an account</a> for more functionalities:
+        </h2>
+        <ul>
+          <li>
+            <span class="icon">
+                <i class="mdi mdi-account-card-details mdi-light"></i>
+              </span>
+            </span>
+            <span>&ensp;Monthly diagnostic health reports</span>
+          </li>
+          <li>
+            <span class="icon">
+                <i class="mdi mdi-forum mdi-light"></i>
+              </span>
+            </span>
+            <span>&ensp;Communication platform with doctors in your network</span>
+          </li>
+          <li>
+            <span class="icon">
+                <i class="mdi mdi-account-multiple mdi-light"></i>
+              </span>
+            </span>
+            <span>&ensp;Access to network of hospitals and clinics we’ve partnered with</span>
+          </li>
+          <li>
+            <span class="icon">
+                <i class="mdi mdi-folder-move mdi-light"></i>
+              </span>
+            </span>
+            <span>&ensp;Hassle-free transfer of your medical documents between institutions</span>
+          </li>
+        </ul>
+        <h2>
+          ...and <a class="more">more</a>!
+        </h2>
+      </div>
+    </div>
+  
+  </section>
+
+  <section id="ready" class="hero is-primary is-medium">
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Ready to test it out?
+        </h1>
+        <h2 class="subtitle">
+          Even if you’re unsure, you can try a demo first with a sample health report to see what the results would look like, or feel free to contact us if you have any questions — we’re here to help!
+        </h2>
+        <a class="button is-success is-large">
+          <span>GET STARTED</span>
+          <span class="icon">
+            <i class="mdi mdi-chevron-right mdi-light"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  
+  </section>
+
+  <section id="roadmap" class="hero is-medium">
+
+    <div class="hero-body">
+      <div class="columns">
+<!--         <div class="column"></div> -->
+        <div class="column">
+          <h3>
+            <span>COMPANY</span>
+          </h3>
+            <ul>
+              <li>About Us</li>
+              <li>Mission</li>
+              <li>Careers</li>
+              <li>News</li>
+            </ul>
+        </div>
+        <div class="column">
+          <h3>
+            <span>PRODUCT</span>
+          </h3>
+            <ul>
+              <li>Overview</li>
+              <li>Compliance</li>
+              <li>Security</li>
+              <li>API & Docs</li>
+            </ul>
+        </div>
+        <div class="column">
+          <h3>
+            <span>RESOURCES</span>
+          </h3>
+            <ul>
+              <li>FAQ</li>
+              <li>Blog</li>
+              <li>Research</li>
+            </ul>
+        </div>
+        <div class="column">
+          <h3>
+            <span>CONNECT</span>
+          </h3>
+            <ul>
+              <li>hello@lexikohealth.com</li>
+              <li>Contact Us</li>
+              <li>Get Started</li>
+              <li>Log In</li>
+            </ul>
+          </div>
+<!--           <div class="column"></div> -->
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          HIPAA Notice | Privacy Policy | Terms of Use </br> © 2017 Lexiko Health, Inc.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>

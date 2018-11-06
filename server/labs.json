@@ -1,0 +1,34 @@
+{
+	"cbc": {
+		"other names": [
+			"complete blood count"
+		],
+		"specimen": [
+			"blood"
+		],
+		"metrics": {
+			"WBC": [ 
+				"1.2", "3.5"
+			],
+			"RBC": [
+				"1.2", "3.5"
+			]
+		}
+	},
+	"cmp": {
+		"other names": [
+			"comparative metabolic panel"
+		],
+		"specimen": [
+			"blood"
+		],
+		"metrics": {
+			"Glucose, Serum": [
+				"1.2", "3.5"
+			],
+			"BUN": [
+				"1.2", "3.5"
+			]
+		}
+	}
+}

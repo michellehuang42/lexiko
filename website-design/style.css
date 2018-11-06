@@ -1,0 +1,488 @@
+/*1) make section responsive in relation to inline-block*/
+
+
+@import "compass/css3";
+
+/*bulma max*/
+@media screen and (max-width:768px){
+	h1.title {
+		font-family: HiraginoSans-W5;
+		font-size: 24px;
+		color: #FFFFFF;	
+	}
+
+	.container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.box {
+		width: 90%;
+/*		padding-bottom: 10%;*/
+	}
+
+/*	#first .first-hr2 {
+		padding-bottom: 0.5em;
+	}*/
+
+	#first.hero.is-large {
+		height: 600px;
+	}
+
+	#third.hero.is-large {
+		height: 920px;
+	}
+
+/*	.box:after {
+		content: "";
+  		display: block;
+  		padding-bottom: 100%;
+	}*/
+
+	img {
+		max-width: 100%;
+	}
+}
+
+/*for phones*/
+@media screen and (max-width:640px){
+	.container {
+		width: 100%;
+		height: 100%;
+	}
+
+	#landing .hero-body .container h1 {
+		font-size: 40px;
+	}
+
+	#first div.container {
+		position: relative;
+		right: 0;
+		width: 100%;
+	}
+
+	#second div.container {
+		position: relative;
+		right: 0;
+		width: 100%;
+		margin-left: 0;
+		padding-left: 20px;
+	}
+
+	#second img {
+		display: none;
+	}
+
+	section#third {
+		padding: 20px !important;
+	}
+
+	#third div.box {
+		margin: auto;
+
+	}
+
+	#third div.box h1 {
+		font-size: 19px;
+		margin-bottom: 15px;
+	}
+
+	#third div.box h2 {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	#third div.box ul {
+		left: 0px;
+		font-size: 18px;
+	}
+}
+
+/*smallest screen size*/
+@media screen and (max-width:320px){
+	.container {
+		width:320px;	
+	}
+}
+
+h1.title {
+	font-family: HiraginoSans-W5;
+	font-size: 32px;
+	color: #FFFFFF;	
+}
+
+h2.subtitle {
+	font-family: Avenir-Light;
+	font-size: 24px;
+	color: #FFFFFF;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+	margin: 32px;
+}
+
+h2 {
+	margin: 32px;
+}
+
+.position {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.icon {
+	padding: 5px 0px;
+}
+
+#landing {
+	background-image: url("./images/healthdata_wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#landing .gradient {
+	/*background: linear-gradient(#BCBCBD, #1B1945);*/
+	background-image: -webkit-linear-gradient(rgba(27,25,69,0.00) 0%, #000000 100%);
+	background-image: -o-linear-gradient(rgba(27,25,69,0.00) 0%, #000000 100%);
+	background-image: linear-gradient(rgba(27,25,69,0.00) 0%, #000000 100%);
+	opacity: .95;
+	min-height: 750px;
+}
+
+#landing .gradient2 {
+	background-image: -webkit-linear-gradient(rgba(27,25,69,0.00) 12%, rgba(44,43,108,0.27) 35%, #5C5CD6 100%);
+	background-image: -o-linear-gradient(rgba(27,25,69,0.00) 12%, rgba(44,43,108,0.27) 35%, #5C5CD6 100%);
+	background-image: linear-gradient(rgba(27,25,69,0.00) 12%, rgba(44,43,108,0.27) 35%, #5C5CD6 100%);
+	opacity: .25;
+	min-height: 750px;
+}
+
+#landing .hero-head {
+	padding: 25px;
+}
+
+#landing .hero-head .icon {
+	line-height: 1rem;
+}
+
+#landing .hero-head .button {
+	background-color: rgba(255,255,255,0.24);
+	border: 0.5px solid white;
+	color: white;
+}
+
+#landing .hero-body .next {
+	text-align: center;
+}
+
+#landing .hero-body .next .icon {
+	display: inline-block;
+}
+
+#landing .hero-body h1 {
+	font-family: HiraginoSans-W6;
+	font-size: 48px;
+	letter-spacing: 0;
+	margin-top: 200px;
+	margin-bottom: 60px;
+}
+
+#landing .hero-body h2 {
+	font-size: 26px;
+}
+
+#landing .buttons {
+	display: inline-block;
+	margin-right: auto; 
+	margin-left: auto;
+}
+
+#landing .buttons .button {
+	text-decoration: none;
+	padding: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+	line-height: 20px;
+}
+
+#landing .buttons .users {
+	background: #FF935A;
+	/*border: 1px solid #FFFFFF;*/
+}
+
+.button .icon:last-child:not(:first-child) {
+	margin-left: 0rem;
+    margin-right: -1rem;
+}
+
+#landing .hero-body .next {
+	margin-top: 20px;
+	font-family: AvenirNext-Medium;
+	font-size: 21px;
+	color: #FFFFFF;
+}
+
+#first {
+	background-image: url("./images/doctordesk.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+#first .first-gradient {
+	opacity: 0.90;
+	background-image: -webkit-linear-gradient(left, rgba(188,188,189,.48) 0%, #1B1945 100%);
+	background-image: -o-linear-gradient(left, rgba(188,188,189,.48) 0%, #1B1945 100%);
+	background-image: linear-gradient(to right, rgba(188,188,189,.48) 0%, #1B1945 100%);
+	mix-blend-mode: multiply;
+}
+
+#first .first-gradient2 {
+	opacity: 0.25;
+	background: #1B1945;
+}
+
+#first .first-hr {
+    display: block;
+    border: 0;
+    border-top: 5px solid #5199D2;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#first .first-hr2 {
+    display: block;
+    border: 0;
+    border-top: 3px solid #5199D2;
+    margin: 12em 0;
+    padding: 0;
+}
+
+#first .hero-body {
+    padding-top: 10%;
+    padding-bottom: 50%;
+}
+
+#first .container {
+	width: 40%;
+	position: absolute;
+	right: 120px;
+	padding-bottom: 50%;
+}
+
+#first h2 {
+	margin: 32px;
+}
+
+#first .button {
+	position: relative;
+	float: right;
+	margin-top: 10%;
+	padding: -2px;
+	border-radius: 25px;
+	padding-left: 1.5em;
+	letter-spacing: 1.4px;
+	line-height: 20px;
+}
+
+.button.is-medium .icon:last-child:not(:first-child) {
+	margin-left: 0rem;
+    margin-right: -0.125rem;
+}
+
+#second {
+	background-color: #1B1945;
+}
+
+#second h1 {
+}
+
+#second h2 {
+	margin: 32px;
+}
+
+#second .container {
+	text-align: left;
+	margin-left: 10%;
+	width: 60%;
+	border-left: 5px solid #5199D2;
+	padding-left: 40px;
+}
+
+#second img {
+	width: 142px;
+	height: 142px;
+	position: relative;
+	margin: -180px 15%;
+	float: right;
+
+}
+
+#third {
+	display: flex;
+	position: relative;
+	background-image: -webkit-linear-gradient(rgba(25,27,69,.3) 0%);
+	background-image: -o-linear-gradient(rgba(25,27,69,.3) 0%);
+	background-image: linear-gradient(rgba(25,27,69,.3) 0%);
+	background-image: url("./images/organization.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 65px;
+}
+
+#third .background-img {
+	background: #1B1945;
+	opacity: .7;
+	/* filter not working */
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+#third .wrapper {
+	z-index: 2;
+	margin: auto;
+}
+
+#third .box {
+/*	for step 3 you can make a div inside a large hero section and put 
+	margin 16px which is the default and make the 
+	background color white 0.7 transparent*/
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 1px solid white;
+	border-radius: 3px;
+	/*padding: 35px;*/
+}
+
+#third .box h1 {
+	font-family: HiraginoSans-W5;
+	font-size: 32px;
+	color: #FFFFFF;	
+	text-align: center;
+}
+
+#third .box h2 {
+	position: relative;
+	font-family: Avenir-Light;
+	font-size: 24px;
+	color: #FFFFFF;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+	margin: 32px;
+}
+
+#third .box .more {
+	border-bottom: 3px solid #5199D2;
+}
+
+#third .box ul {
+	position: relative;
+	font-family: Avenir-Light;
+	font-size: 24px;
+	color: #FFFFFF;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+	margin: 32px;
+	text-align: left;
+	left: 35px;
+}
+
+#ready {
+	background-color: #1B1945;
+}
+
+#ready h1 {
+}
+
+#ready h2 {
+	margin: 32px;
+}
+
+.button.is-large .icon:last-child:not(:first-child) {
+	margin-left: 0rem;
+    margin-right: -0.75rem;
+}
+
+#roadmap {
+	background-color: rgba(27,25,69,0.80);
+	overflow: hidden;
+}
+
+#roadmap .columns {
+	margin-left: 10%;
+	margin-right: 5%;
+}
+
+/*#roadmap .small-sections {
+	overflow: hidden;*/
+	/*margin: 5px;*/
+/*	display: inline-block;
+	vertical-align: top;
+	padding: 25px;
+	margin-left: 5%;
+	width: 15%;
+}*/
+
+#roadmap h3 {
+	font-family: HiraginoSans-W5;
+	font-size: 20px;
+	color: #A3A2A2;
+	letter-spacing: 2px;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+}
+
+#roadmap span {
+	border-bottom: 1px solid #A3A2A2;
+	padding-bottom: 9px;
+}
+
+#roadmap li {
+	padding-top: 9px;
+	font-family: Avenir-Light;
+	font-size: 18px;
+	color: #FFFFFF;
+	line-height: 31px;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+}
+
+.footer {
+	background-color: #1B1945;
+}
+
+.footer p {
+	color: #FFFFFF;
+}
+
+/*
+h1.title {
+	font-family: HiraginoSans-W6;
+	font-size: 48px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}*/
+
+/*.navbar {
+  background-color: #f8f8ff;
+  border: 1px solid #dcdcdc;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  
+  &.is-hidden {
+    opacity: 0;
+    -webkit-transform: translate(0,-60px);
+    -webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
+  }
+  
+  &.is-visible {
+    opacity: 0.5;
+    -webkit-transform: translate(0,0);
+    -webkit-transition: -webkit-transform .2s,background .3s,color .3s;
+  }
+*/

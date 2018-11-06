@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Results</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Khula:300,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="./static/results_style.css">
+
+  
+</head>
+
+<body>
+    <!-- 
+      Return results here - format of results should go something like:  
+        Header 1: results
+        Header 2: test name
+        paragraph: statistic
+        canvas: [bar chart: for low, normal, high]. better to do canvas or figure?
+
+        Header 1: What do your results mean?
+        paragraph: some analysis - based on trigger levels for data
+
+        Header 2: What can you do?
+        paragraph: some analysis
+
+        different divs/sections for each category with new header
+    -->
+
+  <h1>Results</h1>
+  <h2>{test name}</h2>
+  <p>{patient statistic}</p>
+  <figure>
+<!--   <div class="y-axis">
+    <h3>Y-Axis Title</h3>
+  </div> -->
+
+  <div class="graphic">
+
+    <div class="row">
+      <div class="chart">
+        <span class="block" title="Low">
+           <span class="value">57%</span>
+        </span>
+        <span class="block" title="Normal">
+           <span class="value">13%</span>
+        </span>
+        <span class="block" title="High">
+           <span class="value">8%</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <h6>Bar Two</h6>
+      <div class="chart">
+        <span class="block" title="Category A">
+            <span class="value">29%</span>
+        </span>
+        <span class="block" title="Category B">
+            <span class="value">21%</span>
+        </span>
+        <span class="block" title="Category C">
+             <span class="value">19%</span>
+        </span>
+        <span class="block" title="Category D">
+             <span class="value">6%</span>
+        </span>
+        <span class="block" title="Category E">
+             <span class="value">19%</span>
+        </span>
+        <span class="block" title="Category F">
+             <span class="value">6%</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <h6>Bar Three</h6>
+      <div class="chart">
+        <span class="block" title="Category A">
+             <span class="value">8%</span>
+        </span>
+        <span class="block" title="Category B">
+             <span class="value">11%</span>
+        </span>
+        <span class="block" title="Category C">
+             <span class="value">34%</span>
+        </span>
+        <span class="block" title="Category D">
+             <span class="value">2%</span>
+        </span>
+        <span class="block" title="Category E">
+             <span class="value">32%</span>
+        </span>
+        <span class="block" title="Category F">
+             <span class="value">13%</span>
+        </span>
+      </div>
+    </div> -->
+
+  </div>
+
+<!--   <div class="x-axis">
+    <h3>X-Axis Title</h3>
+    <ul class="legend">
+      <li>Category A</li>
+      <li>Category B</li>
+      <li>Category C</li>
+      <li>Category D</li>
+      <li>Category E</li>
+      <li>Category F</li>
+    </ul>
+  </div> -->
+
+</figure>
+<!-- why are certain scripts in the body vs. head? won't work otherwise -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+  <script type="text/javascript" src="./static/results-script.js"></script>
+
+
+
+</body>
+
+</html>
